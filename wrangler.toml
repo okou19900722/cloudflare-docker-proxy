@@ -12,15 +12,15 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.okou.cf", custom_domain = true },
-#   { pattern = "quay.d.okou.cf", custom_domain = true },
-#   { pattern = "gcr.d.okou.cf", custom_domain = true },
-#   { pattern = "k8s-gcr.d.okou.cf", custom_domain = true },
-#   { pattern = "k8s.d.okou.cf", custom_domain = true },
-#   { pattern = "ghcr.d.okou.cf", custom_domain = true },
-#   { pattern = "cloudsmith.d.okou.cf", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.okou.cf", custom_domain = true },
+  { pattern = "quay.d.okou.cf", custom_domain = true },
+  { pattern = "gcr.d.okou.cf", custom_domain = true },
+  { pattern = "k8s-gcr.d.okou.cf", custom_domain = true },
+  { pattern = "k8s.d.okou.cf", custom_domain = true },
+  { pattern = "ghcr.d.okou.cf", custom_domain = true },
+  { pattern = "cloudsmith.d.okou.cf", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
