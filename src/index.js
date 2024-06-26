@@ -17,7 +17,7 @@ const routes = {
   "ecr.d.okou.cf": "https://public.ecr.aws",
 
   // staging
-  "docker-staging.okou.tk": dockerHub,
+  "docker-staging.okou.cf": dockerHub,
 };
 
 function routeByHosts(host) {
